@@ -18,7 +18,7 @@ class ImageGrid extends Component {
 
     render() {
         return (
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap justify-start">
                 {this.state.images.map((image, index) => {
                     return <Image key={index} credit={image.credit} caption={image.caption} href={image.href} />
                 })}
